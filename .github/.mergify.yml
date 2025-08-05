@@ -1,0 +1,30 @@
+pull_request_rules:
+  - name: "🏷️ Label & assign for lesson1 homework"
+    conditions:
+      - base=01-HTML&CSS
+      - body~=作业提交
+    actions:
+      label:
+        add:
+          - homework
+      assign:
+        users:
+          - hhzzff
+  - name: "🏷️ Label & assign for lesson2 homework"
+    conditions:
+      - base=02-JS&TS
+      - body~=作业提交
+    actions:
+      label:
+        add:
+          - homework
+      assign:
+        users:
+          - hhzzff
+  - name: "🏷️ Label other-homework"
+    conditions:
+      - body~=作业提交
+    actions:
+      label:
+        add:
+          - homework
