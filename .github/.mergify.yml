@@ -1,8 +1,0 @@
-pull_request_rules:
-  - name: "🏷️ Label other-homework"
-    conditions:
-      - body~=作业提交
-    actions:
-      label:
-        add:
-          - homework
